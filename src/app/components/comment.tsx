@@ -71,7 +71,7 @@ export default function CommentSection({ postId }: CommentSectionProps) {
   };
 
   return (
-    <div className="mt-8">
+    <div className="mt-8 mb-8">
       <h2 className="text-2xl font-semibold">Comments</h2>
 
       <div className="mt-4 space-y-4">

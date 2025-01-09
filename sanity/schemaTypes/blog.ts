@@ -9,12 +9,6 @@ export default {
             title: 'Title of blog article',
         },
         {
-            name: 'correctTitle',
-            type: 'string',
-            title: 'Correctly defined title',
-            description: 'Define the title of your blog article in a correct way',
-        },
-        {
             name: 'slug',
             type: 'slug',
             title: 'slug of your blog article',
@@ -47,27 +41,7 @@ export default {
                         hotspot: true,
                     },
                 },
-                {
-                    type: 'reference',  // Reference to a link schema type
-                    name: 'link',
-                    to: [{ type: 'url' }],
-                    title: 'Link',
-                    description: 'Add a hyperlink within the content',
-                },
-                {
-                    type: 'object',  // Object to handle the video field
-                    name: 'video',
-                    fields: [
-                        {
-                            name: 'url',
-                            type: 'url',
-                            title: 'Content Video URL',
-                            description: 'Embed a YouTube or Vimeo link',
-                        },
-                    ],
-
-                    
-                },
+               
             ],
         },
     ],

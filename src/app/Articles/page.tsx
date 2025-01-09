@@ -31,8 +31,11 @@ export default async function Home() {
 
 
 
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5 ">
+<h1 className="text-4xl md:text-5xl font-bold text-center leading-tight dark:text-white text-yellow-800 mb-12">
+    Our Blogs
+    </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+      
      
         {data.map((post, idx) => (
           <Card key={idx}>
@@ -45,7 +48,6 @@ export default async function Home() {
             />
             <CardContent className="mt-5">
               <h3 className="text-lg line-clamp-2 font-bold text-[24px] pb-1">{post.title}</h3>
-              <h4 className="text-md font-semibold text-gray-300  ">{post.correctTitle}</h4>
               <p className="line-clamp-3 text-sm text-gray-900 dark:text-gray-300">
                 {post.smallDescription}
               </p>

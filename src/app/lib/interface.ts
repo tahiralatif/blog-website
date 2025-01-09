@@ -1,10 +1,10 @@
-import { PortableTextBlock } from '@portabletext/types';
+import { PortableTextBlock } from "@portabletext/types";
 
 export interface ImageType {
-  _type: 'image';
+  _type: "image";
   asset: {
     _ref: string;
-    _type: 'reference';
+    _type: "reference";
   };
   alt?: string;
 }
@@ -18,8 +18,9 @@ export interface simpleBlogCard {
 }
 
 export interface blogArticle {
+  smallDescription: string; // Changed from ReactNode to string
   title: string;
-  content: PortableTextBlock[] ; // Replace `any` with `PortableTextBlock[]`
+  content: PortableTextBlock[]; // PortableTextBlock[] is correct
   titleImage: ImageType;
   currentSlug: string;
 }
